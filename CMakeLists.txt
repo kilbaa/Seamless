@@ -4,6 +4,7 @@ project(seamless)
 
 add_executable(${PROJECT_NAME}
 	src/main.c
+	include/net.c
 )
 
 target_include_directories(${PROJECT_NAME}
@@ -12,6 +13,10 @@ target_include_directories(${PROJECT_NAME}
 
 target_link_directories(${PROJECT_NAME}
 	PRIVATE lib
+)
+
+target_link_libraries(${PROJECT_NAME}
+    ws2_32
 )
 
 target_compile_options(${PROJECT_NAME} PRIVATE -Wall)
