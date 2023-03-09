@@ -21,5 +21,6 @@ typedef struct {
 } HTTP;
 
 HTTP get(char *body, Header *headers);
+int tcpConnect();
 
 #endif /* CONN_H */

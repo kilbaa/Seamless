@@ -21,3 +21,14 @@ HTTP get(char *body, Header *headers) {
 
     return http;
 }
+
+int tcpConnect(){
+    Clog clog;
+    clog_conn("192.168.1.95", 8001, &clog);
+    char string[4] = "adsw"; //fk u
+    clog_send(&clog, string, sizeof(string));
+    while(1){
+
+    }
+    return 0;
+}

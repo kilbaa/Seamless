@@ -2,7 +2,7 @@
 #include <conn.h>
 
 int main() {
-    createAccount();
-
+    //createAccount();
+    tcpConnect();
     return 0;
 }
