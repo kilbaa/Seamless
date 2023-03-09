@@ -68,3 +68,4 @@ _deps
 # Other
 *.bat
 build/
+.vscode/
